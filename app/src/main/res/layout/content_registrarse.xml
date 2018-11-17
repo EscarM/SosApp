@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Registrarse"
+    tools:showIn="@layout/activity_registrarse">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="86dp"
+        tools:text="Email" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="217dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sosapp"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/registrar_email"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <EditText
+        android:id="@+id/registrar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <EditText
+        android:id="@+id/registrar_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <EditText
+        android:id="@+id/registrar_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/registrar_email"
+        tools:layout_editor_absoluteX="85dp"
+        tools:text="Nombre" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/registrar_name"
+        tools:layout_editor_absoluteX="86dp"
+        tools:text="Contraseña" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/registrar_password"
+        tools:layout_editor_absoluteX="86dp"
+        tools:text="Cambiar Contraseña" />
+
+    <Button
+        android:id="@+id/registro_cancelar"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Cancelar"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintTop_toBottomOf="@+id/registrar_confirmar"
+        tools:layout_editor_absoluteX="102dp" />
+
+    <Button
+        android:id="@+id/registro_registrar"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Registrar"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintTop_toBottomOf="@+id/registrar_confirmar"
+        tools:layout_editor_absoluteX="215dp" />
+</android.support.constraint.ConstraintLayout>
